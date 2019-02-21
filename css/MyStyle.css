@@ -1,0 +1,902 @@
+/* -----------------Rules----------------
+            FristColor : #08526D;
+            SecondColor : #EC1D24;
+*/
+
+
+/* Start Top Bar */
+
+ .top-bar {
+     background-color:#08526D;
+     color: rgba(255, 255, 255, 0.555);
+     padding: 10px 5px 0px; 
+    
+ }
+ .top-bar .koko {
+    letter-spacing: 2px;
+    font-family: brela;
+   
+ }
+ .top-bar p {
+
+    font-size: 0.8rem;
+    font-family: Kruda;
+    letter-spacing: 2px;
+    
+}
+.top-bar .btn-custum {
+    font-family: Kruda;
+    font-size: 1rem;
+    padding: 6px;
+    border: 2px solid #EC1D24;
+    width: 100px;
+}
+@media (max-width: 576px) { .top-bar .btn-custum {border:0;}}
+
+.info {
+    margin: 10px 0;
+}
+
+@media (max-width: 576px) {.info {margin: 0;}}
+@media (max-width: 768px) {.info {margin: 0;}}
+
+ /* End Top Bar */
+
+ /*Start Navbar */
+.navbar {
+
+    padding-top: 10px;
+    padding-bottom: 12px;
+    
+}
+
+.navbar-brand span {
+
+    font-weight: 700;
+    font-family: Kruda;
+    font-size: 44px;
+}
+
+.navbar-brand:first-child {
+color: #08526D;
+
+}
+.navbar-brand span:last-child {
+color: #EC1D24;
+font-weight: 300;
+
+}
+.navbar-nav .nav-link {
+
+    font-size: 19px;
+    margin-right: 13px;
+    text-transform: uppercase;
+    color: #08526D !important;
+    font-weight: 600;
+    font-family: Kruda;
+    font-weight: 900;
+}
+.navbar-nav .active > .nav-link {
+    color: #EC1D24 !important;
+}
+.navbar-nav .nav-link:hover {
+    color: #EC1D24 !important;
+}
+
+
+/* End navbar */
+/* Start slider from owlcarousel */
+
+/* Wrapper of images  */
+.owl-stage-outer , .owl-stage , .owl-item {
+
+    height: 100% !important;
+ }
+ .slider-section .slider {
+    background-size: cover;
+    /* height: 100vh; */ /* calcule height viewport with js */
+    height: 100%;
+   
+    
+}
+
+/* Images slider  */
+.slider-section .owl-carousel .slider-1 {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(#00000091),to(#00000091)), url("../img/banner.jpg");
+    background-image: linear-gradient(#00000091,#00000091), url("../img/banner.jpg");
+}
+.slider-section .owl-carousel .slider-2 {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(#00000091),to(#00000091)),url("../img/banner.jpg");
+    background-image: linear-gradient(#00000091,#00000091),url("../img/banner.jpg");
+}
+.slider-section .owl-carousel .slider-3 {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(#00000091),to(#00000091)), url("../img/banner.jpg");
+    background-image: linear-gradient(#00000091,#00000091), url("../img/banner.jpg");
+}
+
+.owl-carousel {
+    height: 500px;
+}
+
+/* Nav owlcarousel */
+
+/* wrapper nav prev */
+.owl-nav .owl-prev  {
+
+   
+    position: absolute;
+    top: 40%;
+    left: 18px;
+    display: block !important;  
+}
+/* wrapper nav next */
+.owl-nav .owl-next {
+   
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    right: 18px;
+    display: block !important;
+   
+   
+}
+.owl-carousel .owl-nav button.owl-prev , .owl-carousel .owl-nav button.owl-next {
+    background-color: rgb(2, 2, 2);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+/* (prev,next) from fontawesome we add icon in js call (navText) */
+.owl-prev i, .owl-next i {-webkit-transform : scale(1,2);transform : scale(1,2); color: rgb(248, 248, 248);}
+
+/* indicator */
+.owl-dots {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.owl-theme .owl-dots .owl-dot span {
+
+    height: 15px;
+    width: 15px;
+    background: none;
+    border: 1px solid rgb(255, 255, 255);
+   
+}
+/* indicator active */
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: rgb(255, 0, 0);
+
+}
+/* when hover nav  */
+.owl-theme .owl-nav [class*="owl-"]:hover {
+
+    background: #EC1D24;
+   
+}
+
+
+/* owl-nav visible  when hover slider-section */
+.owl-carousel .owl-nav {visibility: hidden; }
+.slider-section:hover .owl-nav{visibility: visible;}
+
+/* when nav disabled means no image in prev or next */
+/* .owl-theme .owl-nav .disabled:hover {
+
+    
+} */
+ /* End slider from owlcarousel */
+
+/* Start text inside slider*/
+
+.slider-section  {
+    position: relative;
+}
+.slider-section p {
+
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    z-index: 4;
+    color: white;
+    font-weight: 400;
+    font-size: 4.3rem;
+    text-transform: capitalize;
+    font-family: Kruda;
+}
+@media (max-width: 576px) {
+    .slider-section p {
+        top: 30%;
+        left: 15%;
+        font-size: 3rem;
+    }
+}
+.slider-section p .higlight {
+
+    background-color: #EC1D24;
+}
+/* ---------------------------------------Start Features------------------------------------------------- */
+.features {
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+/* Icon Wrapper   */
+.features .wrapper {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+height: 60px;
+width: 60px;
+background-color: #EC1D24;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+margin: 0 auto;
+border-radius: 50%;
+margin-bottom: 11px;
+}
+/* Icon */
+.features .wrapper .icon {
+    -ms-flex-item-align: center;
+        align-self: center;
+    color: white;
+
+}
+.features h5 {
+    color: #08526D;
+    letter-spacing: 1px;
+    margin-bottom: 11px;
+    font-family: Kruda;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.features p 
+{
+    font-family: brela;
+    color: rgb(70, 66, 66);
+    line-height: 145%;
+    font-size: 1.2rem;
+}
+@media (max-width: 576px) {
+    .features p {
+        font-size: 1.1rem;
+    }
+}
+/* --------------------------------Start Company Overview--------------------------------------------------------- */
+.company-overiew {
+background-color:#cecdcd3b;
+padding: 50px 10px;
+}
+.company-overiew h2 {
+    margin-bottom:2rem;
+    font-family: Kruda;
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+.company-overiew p {
+    font-family: brela;
+    color: rgb(70, 66, 66);
+    line-height: 145%;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.company-overiew .footer-p {
+ font-family: brela;
+}
+.btn-view{
+    font-family: brela;
+    font-size: 1rem;
+    padding: 6px;
+    border: 2px solid #EC1D24;
+    width: 125px;
+    height: 50px;
+    padding-top: 12px;
+    color: #08526D;
+}
+.btn-view:hover {
+
+    background-color: #EC1D24;
+}
+/* ------------------------------------------------Featured Work-------------------------------------- */
+.Featured-Work {
+
+background-color:#fffefe;
+padding: 50px 10px;
+overflow: hidden;
+}
+.Featured-Work h2 {
+    margin-bottom:2rem;
+    font-family: Kruda;
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+.Featured-Work p {
+    font-family: brela;
+    color: rgb(70, 66, 66);
+    line-height: 145%;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.Featured-Work .list {
+    width: 60%;
+    margin: 4.5rem auto;
+}
+@media (min-width: 768px ) { 
+    .Featured-Work .list {
+        width: 100%;
+       
+    }
+}
+
+
+.Featured-Work .list li {
+   
+    border: 1px solid #08526D;
+    color: #08526D;
+    height: 30px;
+    line-height: 170%;
+    margin: 5px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.Featured-Work .list .actived {
+   
+   background-color: #EC1D24;
+}
+.Featured-Work .list li:hover {
+   background-color: #EC1D24;
+   cursor: pointer;
+}
+.Featured-Work .shuffle-images {
+  margin-top: 40px;
+ 
+  
+}
+.Featured-Work .row .col-sm {
+    padding: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.Featured-Work .row  img {
+width: 100%;
+position: relative;
+}
+.Featured-Work .overlay-imag {
+    background-color:rgba(0, 0, 0, 0.78);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+
+}
+.Featured-Work .overlay-imag .overlay-imag-border {
+    background-color:rgba(0, 0, 0, 0.78);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+}
+.Featured-Work .overlay-imag .overlay-imag-border {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.Featured-Work .overlay-imag .overlay-imag-border .content-text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 2px solid #EC1D24;
+    padding: 1%;
+    height: 50%;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.Featured-Work .overlay-imag-border h5 {
+    color: #EC1D24;
+    font-size: 108.5%;
+    font-weight: bold;
+   
+}
+
+.Featured-Work .overlay-imag-border span {
+    
+    color: white; 
+}
+.Featured-Work .overlay-imag:hover {
+   opacity: 1;
+    
+} 
+/* ------------------------------------Latest Post-------------------------------------------------------- */
+
+/* .latest-Post {
+
+} */
+.latest-Post h2{
+    margin-bottom:2rem;
+    font-family: Kruda;
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+
+.latest-Post p{
+    font-family: brela;
+    color: rgb(70, 66, 66);
+    line-height: 145%;
+    font-size: 1.2rem;
+}
+
+.cards-Style {
+    margin-top: 90px;
+
+}
+.cards-Style .card {
+    cursor: pointer;
+    -webkit-box-shadow: -22px 14px 28px -6px rgba(255, 199, 199, 0.22);
+            box-shadow: -22px 14px 28px -6px rgba(255, 199, 199, 0.22);
+}
+.cards-Style .card-title {
+color: #08526D;
+margin-bottom: 11px;
+font-family: Kruda;
+font-size: 1.6rem;
+font-weight: 900;
+}
+.cards-Style h6 {
+  color: rgba(72, 74, 75, 0.616);
+}
+.cards-Style .card-text {
+    font-family: brela;
+    color: rgb(70, 66, 66);
+    line-height: 145%;
+    font-size: 1.2rem;
+
+}
+.cards-Style a {
+    color: #EC1D24;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+}
+
+/* ----------------------------------------Start customers---------------------------------------------------*/  
+.slider-customers {
+    
+    margin-top: 100px;
+    height: 500px;
+     background-image: -webkit-gradient(linear,left top, left bottom,from(#00000091),to(#00000091)), url(../img/testimonial-bg.jpg);
+     background-image: linear-gradient(#00000091,#00000091), url(../img/testimonial-bg.jpg);
+    background-position: bottom;
+    background-size: cover; 
+}
+.slider-customers .carousel {
+    height: 100%;
+}
+
+/* indicator */
+/* .slider-customers .carousel .carousel-indicators {
+
+}
+/* Navs */
+/* .slider-customers .carousel .carousel-inner .carousel-control-prev {
+
+
+} */
+.carousel-control-next, .carousel-control-prev {
+    background-color: rgb(2, 2, 2);
+    width: 50px;
+    height: 50px;
+}
+.carousel-control-next, .carousel-control-prev {
+    top: 50%;
+}
+.carousel-control-prev {
+    left: 20px;
+}
+.carousel-control-next {
+    right: 20px;
+}
+/* navs hover */
+.control {
+    visibility: hidden;
+}
+.slider-customers .carousel:hover .control {
+
+    visibility: visible;   
+}
+.slider-customers .control:hover {
+
+        background-color: #EC1D24;
+}
+
+
+/* carousel inner */
+.slider-customers .carousel .carousel-inner {
+    height: 100%;
+}
+.slider-customers .carousel .carousel-inner .carousel-item {
+    height: 100%;
+}
+.slider-customers .carousel .carousel-inner .carousel-item .wrapper {
+    height: 100%;;
+    display: -webkit-box;;
+    display: -ms-flexbox;;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.slider-customers .carousel .carousel-inner .carousel-item img {
+
+    width: 100px;
+    height: 100px;
+    margin-bottom: 74px;
+}
+/* caption */
+.slider-customers .carousel .carousel-inner .carousel-item .carousel-caption {
+
+    padding-bottom: 90px;
+
+}
+@media (max-width: 576px)
+{
+.slider-customers .carousel .carousel-inner .carousel-item .carousel-caption{
+padding-bottom: 50px;
+}
+}
+
+/*------------------------------------------- Start Pricing Table -----------------------------------------*/
+.Pricing {
+
+    margin-top: 100px;
+  
+}
+.Pricing h2 {
+
+    margin-bottom: 2rem;
+    font-family: Kruda;
+    font-size: 2.9rem;
+    font-weight: 600;
+  
+}
+.Pricing p {
+
+    font-family: brela;
+    color: rgb(70, 66, 66);
+    line-height: 145%;
+    font-size: 1.2rem;
+  
+}
+.Pricing .cards-Styles {
+
+   margin-top: 50px;
+   margin-left: 2px;
+  
+}
+.Pricing .cards-Styles .card-col {
+        padding: 10px;
+       
+}
+.Pricing .card-body .card-title {
+    margin-bottom: 21px;
+    color: #08526D;
+    border: none;
+    font-family: brela;
+    font-size: 1.9rem;
+
+}
+.Pricing .card-body .card-subtle {
+    margin-bottom: 15px;
+
+}
+.Pricing .card-body .card-footer {
+    background-color: white;
+    border: 0;
+    color: #08526D;
+    font-size: 35px;
+}
+.Pricing .card-body .card-footer span {
+   
+    font-size: 13px;
+}
+.Pricing .card-body  .active {
+    background-color: #EC1D24;
+    color: white;
+
+
+}
+
+
+.Pricing .card-body .card-text ul li {
+    font-size: 16px;
+    line-height: 30px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+/*--------------------------------- Start why shoose us------------------------------------------------------ */
+
+.Choose-Us {
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.Choose-Us .col-md-6  {
+    padding: 0;    
+ }
+.Choose-Us .col-md-6:last-child  {
+    background-color: #08526D;
+    color: white;
+  padding-top: 50px;
+    
+ }
+.Choose-Us .image-why-choose-US {
+
+    background-image: url(../img/man.jpg);
+    background-size: cover;
+    max-width: 100%;
+}
+@media (max-width: 576px)
+{
+    .Choose-Us .image-why-choose-US {
+        height: 400px;
+    }
+
+}
+@media (max-width: 768px)
+{
+    .Choose-Us .image-why-choose-US {
+        height: 400px;
+    }
+
+}
+.Choose-Us  h1 {
+   
+    text-align: center;
+     margin: 40px;
+    font-family: Kruda;
+    font-size: 2.9rem;
+    font-weight: bold;
+    
+}
+.Choose-Us  p {
+    margin: 40px;
+    line-height: 2;
+    font-family: brela;
+    font-size: 1rem;
+}
+.Choose-Us  a {
+    display: block;
+    height: 40px;
+    width: 146px;
+    margin: 10px auto;
+}
+
+
+/*-------------------------------Start Statistics-------------------------------------------------------------  */
+.statistics {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+
+}
+.statistics .icon {
+    margin-bottom: 10px;
+    color: #08526D;
+    font-size: 30px;
+}
+.statistics span {
+    display: block;
+    color: #08526D;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 800;
+}
+.statistics p {
+    color: #EC1D24;
+    letter-spacing: 2px;
+    font-weight: 700;
+    
+}
+
+/*----------------------------Start contact-us---------------------------------------------------------------------- */
+.contact-us {
+    background-color: #EC1D24;
+    padding: 70px;
+    color: white;
+  
+}
+
+.contact-us  h2 {
+    margin: 0;
+   font-size: 25px;
+   margin-bottom: 14px;
+}
+.contact-us  a {
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    width: 160px;
+    border:2px solid white;
+   
+}
+.contact-us  a:hover{
+
+    background-color: #08526D;
+    color: white;
+}
+
+/*-----------------------------Start Footer----------------------------------------------------------------*/
+/* Col--first */
+.Footer {
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.Footer .header-nav {
+
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 44px;
+    color: #08526D;
+}
+.Footer .header-nav .span {
+    color: #EC1D24;
+    font-weight: 300;
+}
+.Footer p {
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 2;
+    font-family: brela;
+    font-size: 1rem;
+
+}
+.Footer a {
+    color: #08526D;
+}
+.Footer a:hover {
+    color:#EC1D24;
+}
+/* col-second */
+.Footer h4 {
+    line-height: 4;
+    color: #08526db8
+}
+.Footer .list-styled {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    color: #08526D;
+}
+.Footer .list-styled li {
+  
+    margin-bottom: 10px;
+}
+/* col-third */
+.Footer .contactus p {
+    line-height: 1.5;
+    
+
+}
+/*-----------------------------footer part 2---------------------------------------------------*/
+footer {
+    padding: 10px 0;
+}
+footer p {
+    font-family: Kruda;
+    letter-spacing: 2px;
+}
+footer .widget ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+
+}
+footer .widget ul li {
+    margin: 5px 10px;
+}
+
+footer .widget ul li a {
+    color: #555;
+}
+footer .widget ul li a:hover {
+    color: #EC1D24;
+}
+
+
+
+
+/* Animation */
+
+.js-wp-1, .js-wp-2{
+    opacity: 0;
+}
+.js-wp-4 {
+    visibility: hidden;
+}
+.js-wp-4.animated {
+    visibility: visible;
+}
+
+.js-wp-1.animated{
+    opacity: 1;
+}
+
+
+
+
+/*-------------- When scrooling add some effect and add fixed nav------------------------- */
+.stickyNavbar {
+ padding: 0;
+
+ -webkit-transition: all .2s ease-in-out;
+
+ transition: all .2s ease-in-out;
+ background-color: #08526D !important;
+}
+.stickyNavbar .navbar-nav {
+ margin-right: 80px;
+}
+.stickyNavbar .navbar-nav .nav-link {
+    font-size: 16px;
+    margin-left: 12px;
+    color: white !important;
+}
+.stickyNavbar .navbar-brand span{
+    font-size: 30px;
+    
+}
+.stickyNavbar .navbar-brand span:first-child {
+    color: white !important;margin-left: 10px;
+}
+.stickyNavbar .navbar-nav .active > .nav-link{
+    color: #EC1D24 !important;
+}
+.stickyNavbar .navbar-nav .nav-link:hover {
+    color: #EC1D24 !important;
+}
+.stickyNavbar  .navbar-toggler {
+    margin-right: 10px;
+}
